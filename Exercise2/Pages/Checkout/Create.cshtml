@@ -1,0 +1,16 @@
+﻿@page
+@model Exercise2.Pages.Checkout.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+<form method="post">
+    <div asp-validation-summary="All" style="color:red"></div>
+    <input asp-for="Person.Name" placeholder="Name" />
+    <input asp-for="Person.Address" placeholder="Address" />
+    <input asp-for="Person.CheckIn" placeholder="Check In" />
+    <input asp-for="Person.CheckOut" placeholder="Check Out" />
+    <input asp-for="Person.RoomNumber" placeholder="Room Number" />
+    <input asp-for="Person.EmailAddress" placeholder="Email Address" />
+    <input asp-for="Person.Billing" placeholder="Billing" />
+    <button type="submit">Submit</button>
+</form>
